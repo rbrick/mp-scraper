@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 
@@ -9,16 +8,9 @@ import (
 )
 
 func main() {
-	r, err := http.Get("http://www.mangapanda.com/soul-eater/1")
-
+	r, err := http.Get("http://www.mangapanda.com/fairy-tail/495")
 	if err != nil {
 		log.Fatalln(err)
 	}
-
-	m := scraper.ParseManga(r.Body, nil)
-
-	if m != nil {
-		fmt.Println("Successfully parsed Manga")
-		fmt.Println("Name:", m.Name)
-	}
+	scraper.ParseManga(r.Body, nil)
 }

@@ -4,6 +4,10 @@
 	"GodepVersion": "v74",
 	"Deps": [
 		{
+			"ImportPath": "github.com/jung-kurt/gofpdf",
+			"Rev": "11f22e6f7d4f331772e7999a14bb7ade23028f19"
+		},
+		{
 			"ImportPath": "golang.org/x/net/html",
 			"Rev": "4d38db76854b199960801a1734443fd02870d7e1"
 		},
