@@ -6,3 +6,5 @@
 *.opf
 *.html
 mimetype
+vendor/
+.vscode/
